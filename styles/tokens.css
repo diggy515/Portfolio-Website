@@ -1,0 +1,108 @@
+/* ── Typography ────────────────────────────────────────────── */
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap");
+
+:root {
+  --font-grotesque: "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-display: var(--font-grotesque);
+  --font-body: var(--font-grotesque);
+  --font-meta: var(--font-mono);
+
+  --text-meta: 11px;
+  --text-caption: 12px;
+  --text-nav: 13px;
+  --text-body: 15px;
+  --text-lead: 19px;
+  --text-title: clamp(28px, 4vw, 44px);
+  --text-display: clamp(44px, 9vw, 120px);
+
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --leading-display: 0.96;
+  --leading-tight: 1.08;
+  --leading-snug: 1.3;
+  --leading-body: 1.6;
+
+  --tracking-display: -0.03em;
+  --tracking-tight: -0.01em;
+  --tracking-normal: 0;
+  --tracking-label: 0.08em;
+  --tracking-wide: 0.14em;
+
+  /* ── Color ─────────────────────────────────────────────────── */
+  --ink-900: #000000;
+  --ink-800: #0A0A0A;
+  --ink-700: #141414;
+
+  --paper-000: #FFFFFF;
+  --paper-100: #F2F2F2;
+  --paper-64: rgba(255, 255, 255, 0.64);
+  --paper-46: rgba(255, 255, 255, 0.46);
+  --paper-30: rgba(255, 255, 255, 0.30);
+  --paper-16: rgba(255, 255, 255, 0.16);
+  --paper-08: rgba(255, 255, 255, 0.08);
+
+  --canvas: var(--ink-900);
+  --surface: var(--ink-800);
+  --surface-inset: var(--ink-700);
+
+  --text-primary: var(--paper-000);
+  --text-display-color: var(--paper-100);
+  --text-secondary: var(--paper-64);
+  --text-meta-color: var(--paper-46);
+
+  --hairline: var(--paper-16);
+  --hairline-faint: var(--paper-08);
+  --hover-well: var(--paper-08);
+
+  --wave-played: var(--paper-000);
+  --wave-track: var(--paper-30);
+
+  /* ── Spacing ───────────────────────────────────────────────── */
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+  --space-11: 192px;
+  --space-12: 256px;
+
+  --margin-page: clamp(20px, 5vw, 80px);
+  --gutter: clamp(16px, 2.4vw, 40px);
+  --measure-prose: 60ch;
+  --measure-narrow: 42ch;
+  --radius: 0;
+  --hairline-width: 1px;
+
+  /* ── Motion ────────────────────────────────────────────────── */
+  --dur-instant: 80ms;
+  --dur-fast: 160ms;
+  --dur-base: 240ms;
+  --dur-slow: 420ms;
+  --dur-reveal: 700ms;
+  --ease-out: cubic-bezier(0.20, 0.00, 0.00, 1.00);
+  --ease-in-out: cubic-bezier(0.45, 0.00, 0.20, 1.00);
+  --shift-small: 8px;
+  --transition-opacity: opacity var(--dur-base) var(--ease-out);
+  --transition-link: opacity var(--dur-fast) var(--ease-out);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur-base: 0ms;
+    --dur-slow: 0ms;
+    --dur-reveal: 0ms;
+    --shift-small: 0px;
+  }
+}
