@@ -8,7 +8,7 @@ export const FEATURED_TRACK = {
   /** Peaks JSON URL on R2. Format: { peaks: number[], duration: number }. Leave empty until uploaded. */
   peaksUrl: "https://media.tanmayawahal.com/SIY.peaks.json",
   /** Cover art — drop in /public/assets/ or use an external URL. */
-  coverArt: "",
+  coverArt: "https://media.tanmayawahal.com/SIY%20Cover%20Art.png",
   coverAlt: "So Into You — cover art",
   /** Duration in seconds (used as placeholder before peaks JSON loads). */
   duration: 222,
