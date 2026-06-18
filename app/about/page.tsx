@@ -57,7 +57,7 @@ export default function AboutPage() {
         {/* Portrait + metadata sidebar */}
         <aside style={{ display: "grid", gap: "var(--space-7)", alignContent: "start" }}>
           {/* Portrait image or placeholder */}
-          <div style={{ width: "100%", aspectRatio: "3 / 4", background: "var(--surface)", border: "1px solid var(--hairline)" }}>
+          <div style={{ width: "100%", aspectRatio: "3 / 4", background: "var(--surface)", border: "1px solid var(--hairline)", position: "relative", overflow: "hidden" }}>
             {PORTRAIT_SRC ? (
               <Image
                 src={PORTRAIT_SRC}

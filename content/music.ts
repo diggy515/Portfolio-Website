@@ -16,6 +16,7 @@ export const FEATURED_TRACK = {
 
 /** Spotify embeds — each needs the track ID and the `si` tracking param. */
 export const SPOTIFY_EMBEDS = [
+  { title: "So Into You",    id: "7pSMwpjDXjEiqktmV4TzTe", si: "40b7089ee34745f6" },
   { title: "Hodrick Reflex", id: "05juC04lmsb7WODpISrcJI", si: "241b4867df244796" },
   { title: "Goldmine",       id: "6i8F8FFKKqgmVkZgnSqvIG", si: "bfc281e14de2414d" },
   { title: "Kahani",         id: "2RiZNenrEdYtIu8SwhEyMe", si: "028bd641e1f24fb3" },

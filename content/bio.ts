@@ -32,5 +32,5 @@ export const SELECTED_WORKS = [
 ];
 
 /** Path to portrait image under /public (leave empty until you add one). */
-export const PORTRAIT_SRC = "";
+export const PORTRAIT_SRC = "https://media.tanmayawahal.com/01JSZF611WGDYJHZE8M108PPQ2-low-res-branded-.JPG";
 export const PORTRAIT_ALT = "Tanmaya Wahal";
