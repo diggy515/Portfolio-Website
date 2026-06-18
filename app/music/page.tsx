@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Shell from "@/components/Shell";
 import SectionHead from "@/components/SectionHead";
 import WaveformPlayer from "@/components/WaveformPlayer";
-import { FEATURED_TRACK, SPOTIFY_EMBEDS } from "@/content/music";
+import { FEATURED_TRACK, SPOTIFY_EMBEDS, RUMOR_FISH_TEASER } from "@/content/music";
 
 function FeaturedTrack() {
   const [peaks, setPeaks] = useState<number[] | undefined>(undefined);
@@ -43,6 +43,35 @@ export default function MusicPage() {
   return (
     <Shell active="music">
       <SectionHead eyebrow="Music" title="Releases & productions" />
+
+      {/* Rumor Fish EP Teaser */}
+      <section style={{ marginBottom: "var(--space-10)" }}>
+        <div className="ds-meta" style={{ marginBottom: "var(--space-2)" }}>
+          {RUMOR_FISH_TEASER.label}
+        </div>
+        <div
+          style={{
+            fontFamily: "var(--font-mono)",
+            fontSize: "var(--text-meta)",
+            letterSpacing: "0",
+            textTransform: "none",
+            color: "var(--text-secondary)",
+            marginBottom: "var(--space-5)",
+          }}
+        >
+          {RUMOR_FISH_TEASER.description}
+        </div>
+        <div className="tube-frame" style={{ maxWidth: "960px" }}>
+          <iframe
+            src={`https://www.youtube.com/embed/${RUMOR_FISH_TEASER.youtubeId}`}
+            title={RUMOR_FISH_TEASER.label}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            loading="lazy"
+          />
+        </div>
+      </section>
 
       {/* Featured — So Into You */}
       <section

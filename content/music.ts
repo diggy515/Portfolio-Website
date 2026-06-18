@@ -1,3 +1,10 @@
+/** Rumor Fish EP teaser video — shown at the top of the music page. */
+export const RUMOR_FISH_TEASER = {
+  youtubeId: "-2tn6zPaJGk",
+  label: "Rumor Fish EP Teaser",
+  description: "Rumor Fish is a shoegaze project by Aasmi and I",
+};
+
 /** Featured track — hosted on Cloudflare R2. Paste public URLs once uploaded. */
 export const FEATURED_TRACK = {
   id: "so-into-you",
